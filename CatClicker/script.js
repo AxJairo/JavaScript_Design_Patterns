@@ -1,5 +1,4 @@
-var contador = 1;
-
+const contador = [1, 1];
 
 function putName(){
     const names = ["Grumpy" , "Orange"];
@@ -7,15 +6,18 @@ function putName(){
     document.getElementById("o").innerHTML = names[1];
 }
 
-function getCats(){
-    const elem = document.getElementsByClassName("cat");
-    Array.from(elem).forEach(function(element) {
-        element.addEventListener('click', count);
+function getCatGrumpy(){
+    const elem = document.getElementById("catGrumpy");
+    elem.addEventListener('click', function(){
+        document.getElementById("counter_o").innerHTML = contador[0];
+        contador[0]=contador[0]+1;
     });
 }
-    
-function count(){
-    document.getElementById("counter").innerHTML = contador;
-    contador ++;
-}
 
+function getCatOrange(){
+    const elem = document.getElementById("catOrange");
+    elem.addEventListener('mouseover', function(){
+        document.getElementById("counter_p").innerHTML = contador[1];
+        contador[1]=contador[1]+1;
+    });
+}

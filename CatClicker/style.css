@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.cat {
+.cats {
     width: 600px;
     height: 500px;
 }
@@ -14,7 +14,7 @@
     align-items: baseline;
 }
 
-#counter, #o, #g{
+#counter_o, #counter_p, #o, #g{
     font-weight: bold;
     font-size: 32px;
 }

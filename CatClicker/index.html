@@ -11,17 +11,18 @@
 <body>
     <div class="panel">
         <h2>Click Counter:</h2>
-        <p id="counter">0</p>
         <div class="gridCats">
             <div>
+                <p id="counter_o">0</p>
                 <a id="g"></a>
                 <br>
-                <input onload="getCats()" class="cat" type="image" alt="A very grumpy cat" src="Images/Grumpy.jpg">
-                </div>
-                <div>
+                <input onload="getCatGrumpy(), putName()" class="cats" id="catGrumpy" type="image" alt="A very grumpy cat" src="Images/Grumpy.jpg">
+            </div>
+            <div>
+                <p id="counter_p">0</p>
                 <a id="o"></a>
                 <br>
-                <input onload="getCats(),putName()" class="cat" type="image" alt="A very suspicious cat" src="Images/Orange.jpg">
+                <input onload="getCatOrange()" class="cats" id="catOrange" type="image" alt="A very suspicious cat" src="Images/Orange.jpg">
             </div>
         </div>
     </div>
