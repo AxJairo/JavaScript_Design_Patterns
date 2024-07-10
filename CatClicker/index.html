@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatClicker</title>
+    <h1 id="main_title">CatClicker!</h1>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="panel">
+        <h2>Contador de cliques:</h2>
+        <p id="counter">0</p>
+        <img id="cat" src="Images/Grumpy.jpg" alt="A very grumpy cat" >
+        <script>
+            var contador = 1;
+            const elem = document.getElementById("cat");
+            elem.addEventListener("click", function(){
+                //alert("Foto do gato clicado");
+                document.getElementById("counter").innerHTML = contador;
+                contador ++;
+            }, false);
+        </script>
+    </div>
+
+</body>
+</html>
