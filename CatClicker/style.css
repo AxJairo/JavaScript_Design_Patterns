@@ -4,16 +4,24 @@
     text-align: center;
 }
 
-#cat {
-    width: 50%;
-    height: 50%;
+.cat {
+    width: 600px;
+    height: 500px;
 }
 
 .panel{
     text-align: center;
+    align-items: baseline;
 }
 
-#counter{
+#counter, #o, #g{
     font-weight: bold;
     font-size: 32px;
+}
+
+.gridCats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }

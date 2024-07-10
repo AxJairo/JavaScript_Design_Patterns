@@ -10,9 +10,20 @@
 </head>
 <body>
     <div class="panel">
-        <h2>Contador de cliques:</h2>
+        <h2>Click Counter:</h2>
         <p id="counter">0</p>
-        <input onload="count()" id="cat" type="image" alt="A very grumpy cat input" src="Images/Grumpy.jpg">
+        <div class="gridCats">
+            <div>
+                <a id="g"></a>
+                <br>
+                <input onload="getCats()" class="cat" type="image" alt="A very grumpy cat" src="Images/Grumpy.jpg">
+                </div>
+                <div>
+                <a id="o"></a>
+                <br>
+                <input onload="getCats(),putName()" class="cat" type="image" alt="A very suspicious cat" src="Images/Orange.jpg">
+            </div>
+        </div>
     </div>
 </body>
 </html>
