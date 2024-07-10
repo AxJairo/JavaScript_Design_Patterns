@@ -12,17 +12,7 @@
     <div class="panel">
         <h2>Contador de cliques:</h2>
         <p id="counter">0</p>
-        <img id="cat" src="Images/Grumpy.jpg" alt="A very grumpy cat" >
-        <script>
-            var contador = 1;
-            const elem = document.getElementById("cat");
-            elem.addEventListener("click", function(){
-                //alert("Foto do gato clicado");
-                document.getElementById("counter").innerHTML = contador;
-                contador ++;
-            }, false);
-        </script>
+        <input onload="count()" id="cat" type="image" alt="A very grumpy cat input" src="Images/Grumpy.jpg">
     </div>
-
 </body>
 </html>
